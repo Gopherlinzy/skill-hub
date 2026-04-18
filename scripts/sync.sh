@@ -3,7 +3,7 @@
 # 流向: ~/projects/prd-pilot -> ~/projects/skill-hub/skills/prd-pilot -> ~/.claude/skills/prd-pilot
 # 使用: ./scripts/sync.sh
 
-set -e
+set -o pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
@@ -30,7 +30,11 @@ if [ -d "$LOCAL_PRD" ] && [ -d "$SKILLS_DIR/prd-pilot" ]; then
   # Build
   cd "$SKILLS_DIR/prd-pilot"
   pnpm install --silent 2>/dev/null || npm install --silent
-  npm run build 2>&1 | grep -E "error|warning|done" || true
+  if npm run build 2>&1 | grep -E "error|warning|done" || true; then
+    BUILD_SUCCESS=1
+  else
+    BUILD_SUCCESS=0
+  fi
 
   # 同步到全局 skills: build 产物 -> 全局
   GLOBAL_SKILLS="$HOME/.claude/skills/prd-pilot"
