@@ -19,6 +19,7 @@ if [ -d "$SKILLS_DIR/prd-pilot" ]; then
   PDR_PILOT_VERSION=$(grep '"version"' "$SKILLS_DIR/prd-pilot/package.json" | head -1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
   echo "  版本: $PDR_PILOT_VERSION"
   cd "$SKILLS_DIR/prd-pilot"
+  pnpm install --silent 2>/dev/null || npm install --silent
   npm run build 2>&1 | grep -E "error|warning|done" || true
   cd "$REPO_ROOT"
 fi
