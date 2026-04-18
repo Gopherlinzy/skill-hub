@@ -4,27 +4,29 @@ Personal collection of Claude Code skills.
 
 ## 📦 Skills
 
-| Skill | Description | Type |
-|-------|-------------|------|
-| **prd-pilot** | PRD-driven development quality system - analyzes requirements, detects gaps, reviews PRs against specs | TypeScript + Node |
-| **red-team** | Critical review skill - challenges proposals, finds logic flaws, questions assumptions | Markdown |
+| Skill | Description | Install |
+|-------|-------------|---------|
+| **prd-pilot** | PRD-driven development — analyzes requirements, detects gaps, reviews PRs against specs | `/plugin add Gopherlinzy/skill-hub/skills/prd-pilot` |
+| **red-team** | Critical review — challenges proposals, finds logic flaws, questions assumptions | `/plugin add Gopherlinzy/skill-hub/skills/red-team` |
 
 ## 📥 Installation
 
-### Method 1: Local Development
-For development on this machine, install directly from the local repository:
+### Install a single skill
+
+Pick the skill you want:
 
 ```bash
-/plugin install-local /Users/admin/projects/skill-hub/skills/prd-pilot
-/reload-plugins
+# prd-pilot
+/plugin add Gopherlinzy/skill-hub/skills/prd-pilot
+
+# red-team
+/plugin add Gopherlinzy/skill-hub/skills/red-team
 ```
 
-### Method 2: From GitHub Marketplace
-Once published to GitHub, install from the Claude Code marketplace:
+### Install all skills at once
 
 ```bash
 /plugin marketplace add Gopherlinzy/skill-hub
-/reload-plugins
 ```
 
 ## 📝 License
