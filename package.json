@@ -1,0 +1,25 @@
+{
+  "name": "skill-hub",
+  "version": "1.0.0",
+  "description": "Personal collection of Claude Code skills",
+  "private": true,
+  "workspaces": [
+    "skills/prd-pilot"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace skills/prd-pilot",
+    "dev": "npm run dev --workspace skills/prd-pilot",
+    "test": "npm run test --workspace skills/prd-pilot",
+    "lint": "npm run lint --workspace skills/prd-pilot",
+    "clean": "rm -rf skills/*/dist skills/*/node_modules",
+    "sync": "bash scripts/sync.sh"
+  },
+  "keywords": [
+    "claude-code",
+    "skills",
+    "prd",
+    "red-team"
+  ],
+  "author": "Gopherlinzy",
+  "license": "MIT"
+}
