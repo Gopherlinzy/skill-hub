@@ -31,3 +31,4 @@ yarn-debug.log*
 # Temp
 .cache/
 tmp/
+skills/prd-pilot/.git/
