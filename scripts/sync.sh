@@ -21,6 +21,19 @@ if [ -d "$SKILLS_DIR/prd-pilot" ]; then
   cd "$SKILLS_DIR/prd-pilot"
   pnpm install --silent 2>/dev/null || npm install --silent
   npm run build 2>&1 | grep -E "error|warning|done" || true
+
+  # 同步到全局 skills 目录
+  GLOBAL_SKILLS="$HOME/.claude/skills/prd-pilot"
+  if [ -d "$GLOBAL_SKILLS" ]; then
+    echo "  📤 同步到全局 skills..."
+    # 同步源代码和编译产物，但保留 SKILL.md 和 references
+    for item in src dist node_modules package.json package-lock.json pnpm-lock.yaml tsconfig.json .env .gitignore LICENSE; do
+      if [ -e "$item" ]; then
+        cp -r "$item" "$GLOBAL_SKILLS/" 2>/dev/null || true
+      fi
+    done
+    echo "  ✅ 已同步到 $GLOBAL_SKILLS"
+  fi
   cd "$REPO_ROOT"
 fi
 
