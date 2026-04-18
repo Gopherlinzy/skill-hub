@@ -32,3 +32,6 @@ yarn-debug.log*
 .cache/
 tmp/
 skills/prd-pilot/.git/
+
+# Scripts
+scripts/
