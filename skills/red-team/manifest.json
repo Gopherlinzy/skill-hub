@@ -5,5 +5,5 @@
   "description": "Critical review skill - challenges proposals, finds logic flaws, questions assumptions",
   "author": "Gopherlinzy",
   "type": "skill",
-  "entrypoint": "../SKILL.md"
+  "entrypoint": "./SKILL.md"
 }
