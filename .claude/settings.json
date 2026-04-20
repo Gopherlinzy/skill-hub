@@ -1,0 +1,16 @@
+{
+  "description": "skill-hub development project settings",
+  "extraKnownMarketplaces": {
+    "skill-hub": {
+      "name": "skill-hub",
+      "source": {
+        "type": "github",
+        "repo": "Gopherlinzy/skill-hub"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "red-team@skill-hub": true,
+    "prd-pilot@skill-hub": true
+  }
+}

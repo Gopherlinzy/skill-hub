@@ -1,0 +1,30 @@
+{
+  "name": "skill-hub",
+  "owner": {
+    "name": "Gopherlinzy",
+    "url": "https://github.com/Gopherlinzy"
+  },
+  "metadata": {
+    "description": "A curated collection of Claude Code skills for developers",
+    "version": "1.0.0",
+    "homepage": "https://github.com/Gopherlinzy/skill-hub"
+  },
+  "plugins": [
+    {
+      "name": "red-team",
+      "source": "./skills/red-team",
+      "description": "Red team security assessment skill — challenges proposals, finds logic flaws, questions assumptions",
+      "category": "security",
+      "tags": ["security", "red-team", "review", "audit"],
+      "homepage": "https://github.com/Gopherlinzy/skill-hub/tree/main/skills/red-team"
+    },
+    {
+      "name": "prd-pilot",
+      "source": "./skills/prd-pilot",
+      "description": "PRD-driven development — analyzes requirements, detects gaps, reviews PRs against specs",
+      "category": "productivity",
+      "tags": ["prd", "product", "planning", "review"],
+      "homepage": "https://github.com/Gopherlinzy/skill-hub/tree/main/skills/prd-pilot"
+    }
+  ]
+}

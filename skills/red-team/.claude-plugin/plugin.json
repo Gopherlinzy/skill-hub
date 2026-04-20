@@ -1,0 +1,16 @@
+{
+  "name": "red-team",
+  "displayName": "Red Team",
+  "description": "Critical review skill — challenges proposals, finds logic flaws, questions assumptions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Gopherlinzy",
+    "url": "https://github.com/Gopherlinzy"
+  },
+  "homepage": "https://github.com/Gopherlinzy/skill-hub/tree/main/skills/red-team",
+  "repository": "https://github.com/Gopherlinzy/skill-hub",
+  "license": "MIT",
+  "category": "security",
+  "tags": ["security", "red-team", "review", "audit"],
+  "keywords": ["security assessment", "critical review", "logic flaws", "assumptions"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "prd-pilot",
+  "displayName": "PRD Pilot",
+  "description": "PRD-driven development — analyzes requirements, detects gaps, reviews PRs against specs",
+  "version": "1.0.0",
+  "author": {
+    "name": "Gopherlinzy",
+    "url": "https://github.com/Gopherlinzy"
+  },
+  "homepage": "https://github.com/Gopherlinzy/skill-hub/tree/main/skills/prd-pilot",
+  "repository": "https://github.com/Gopherlinzy/skill-hub",
+  "license": "MIT",
+  "category": "productivity",
+  "tags": ["prd", "product", "planning", "review"],
+  "keywords": ["PRD analysis", "requirement detection", "PR review", "product planning"]
+}
