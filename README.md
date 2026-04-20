@@ -11,23 +11,27 @@ Personal collection of Claude Code skills.
 
 ## 📥 Installation
 
-### Install a single skill
+### Method 1: Install a single skill (Recommended)
 
-Pick the skill you want:
+Copy the command for the skill you need:
 
+**red-team**
 ```bash
-# prd-pilot
-/plugin add Gopherlinzy/skill-hub/skills/prd-pilot
-
-# red-team
-/plugin add Gopherlinzy/skill-hub/skills/red-team
+/plugin add https://github.com/Gopherlinzy/skill-hub/tree/main/skills/red-team
 ```
 
-### Install all skills at once
+**prd-pilot**
+```bash
+/plugin add https://github.com/Gopherlinzy/skill-hub/tree/main/skills/prd-pilot
+```
+
+### Method 2: Install all skills at once
 
 ```bash
-/plugin marketplace add Gopherlinzy/skill-hub
+/plugin add https://github.com/Gopherlinzy/skill-hub.git
 ```
+
+Claude Code will auto-discover all skills and let you choose which ones to install.
 
 ## 📝 License
 
