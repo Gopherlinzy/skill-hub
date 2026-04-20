@@ -1,0 +1,9 @@
+{
+  "name": "prd-pilot",
+  "version": "1.0.0",
+  "title": "PRD Pilot",
+  "description": "PRD-driven development quality system - analyzes requirements, detects gaps, reviews PRs against specs",
+  "author": "Gopherlinzy",
+  "type": "skill",
+  "entrypoint": "../SKILL.md"
+}

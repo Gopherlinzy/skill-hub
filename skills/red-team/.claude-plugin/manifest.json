@@ -1,0 +1,9 @@
+{
+  "name": "red-team",
+  "version": "1.0.0",
+  "title": "Red Team",
+  "description": "Critical review skill - challenges proposals, finds logic flaws, questions assumptions",
+  "author": "Gopherlinzy",
+  "type": "skill",
+  "entrypoint": "../SKILL.md"
+}
