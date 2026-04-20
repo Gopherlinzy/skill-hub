@@ -4,10 +4,10 @@ Personal collection of Claude Code skills.
 
 ## 📦 Skills
 
-| Skill | Description | Install |
-|-------|-------------|---------|
-| **prd-pilot** | PRD-driven development — analyzes requirements, detects gaps, reviews PRs against specs | `/plugin add Gopherlinzy/skill-hub/skills/prd-pilot` |
-| **red-team** | Critical review — challenges proposals, finds logic flaws, questions assumptions | `/plugin add Gopherlinzy/skill-hub/skills/red-team` |
+| Skill | Description |
+|-------|-------------|
+| **prd-pilot** | PRD-driven development — analyzes requirements, detects gaps, reviews PRs against specs |
+| **red-team** | Critical review — challenges proposals, finds logic flaws, questions assumptions |
 
 ## 📥 Installation
 
